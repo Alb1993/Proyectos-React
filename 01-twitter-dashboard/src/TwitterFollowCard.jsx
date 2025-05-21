@@ -1,8 +1,8 @@
 import './App.css'
 /* Clase Twitter Card*/
-export function TwitterFollowCard({userName, name, isFollowing}) {
-    const imgsrc = 'https://unavatar.io/${userName}'
-    const follow = isFollowing
+export function TwitterFollowCard({formatUserName,userName, name, isFollowing}) {
+    const imgsrc = 'https://unavatar.io/x/${userN}'
+    const addAt = (userName) => '@${userName}'
     return (
         <article classname='tw-followCard'>
             <header className='tw-followCard-header'>
@@ -13,7 +13,7 @@ export function TwitterFollowCard({userName, name, isFollowing}) {
                 />
                 <div className='tw-followCard-info'>
                     <strong>{name}</strong>
-                    <span className="tw-followCard-infoUserName">{userName}</span>
+                    <span className="tw-followCard-infoUserName">{formatUserName(userName)}</span>
                 </div>
                 <aside>
                     <button className='tw-followCard-button'>
@@ -21,7 +21,6 @@ export function TwitterFollowCard({userName, name, isFollowing}) {
                     </button>
                 </aside>
             </header>
-
         </article>
     )
 }
