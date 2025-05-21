@@ -5,9 +5,15 @@ export function App() {
     const formatUserName = (userName) => '@${userName}'
     return (
         <section className="App">
-            <TwitterFollowCard formatUserName={formatUserName} isFollowing={true} userName="pheralb" name="Pablo Hernandez" isFollowing={false}></TwitterFollowCard>
-            <TwitterFollowCard formatUserName={formatUserName} isFollowing={false} userName="elonmusk" name="Elon Musk" isFollowing={false}></TwitterFollowCard> 
-            <TwitterFollowCard formatUserName={formatUserName} isFollowing={false} userName="vxnder" name="Vanderhart" isFollowing={false}></TwitterFollowCard>  
+            <TwitterFollowCard formatUserName={formatUserName} userName="pheralb">
+                Pablo Hernandez
+            </TwitterFollowCard>
+            <TwitterFollowCard formatUserName={formatUserName} userName="elonmusk">
+                Elon Musk
+            </TwitterFollowCard> 
+            <TwitterFollowCard formatUserName={formatUserName} userName="vxnder">
+                Vanderhart  
+            </TwitterFollowCard>  
         </section>
     )
 }

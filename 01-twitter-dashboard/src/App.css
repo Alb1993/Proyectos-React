@@ -45,8 +45,16 @@
 
 }
 
-.tw-followCard-aside {
-  display: flex;
-  flex-direction: row;  /* o column si lo necesitas */
-  justify-content: flex-start; /* o flex-end para el lado derecho */
+.tw-followCard-button:hover {
+  background-color: #ddd;
+  transition: .3s ease background-color;
 }
+
+.tw-followCard-button.is-following {
+  border: 1px solid red;
+}
+
+.tw-followCard-button.is-following:hover {
+  background: red;
+}
+
