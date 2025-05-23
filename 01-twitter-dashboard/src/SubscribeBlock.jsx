@@ -8,7 +8,10 @@ export function SubscribeBlock(){
                     <span>
                         Suscríbete para desbloquear nuevas funciones y, si eres elegible, recibir un pago de cuota de ingresos.
                     </span>
-                    <button className='tw-followCard-button'>Subscribirse</button>
+                    <div className='buttonProps'>
+                    <button className='tw-followCard-subButton'>Subscribirse</button>
+                    </div>
+
                 </section>            
             </div>
     )

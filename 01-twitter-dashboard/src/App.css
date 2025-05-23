@@ -38,9 +38,23 @@
   margin-left: 16px;
   border: 0;
   border-radius: 999px;
-    padding: 6px 16px;
+  padding: 6px 16px;
   font-weight: bold;
   border: 1px solid #000;
+  transition: .3s ease background-color;
+
+}
+
+.tw-followCard-subButton {
+  cursor: pointer;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  background-color: rgb(29, 155, 240);
+  color: #ddd;
+  border: 1px solid;
   transition: .3s ease background-color;
 
 }
@@ -78,8 +92,6 @@
   color: #ddd;
 }
 
-
-
 .searchBlock {
   border-color: #595959;
   border-radius: 30px;
@@ -96,3 +108,7 @@
     height: auto;
 }
 
+.buttonProps {
+  width: 10px;
+
+}
